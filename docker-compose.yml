@@ -1,0 +1,16 @@
+services:
+  mysql:
+    image: mysql:8.4
+    container_name: mldis-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: mldis
+      MYSQL_USER: mldis
+      MYSQL_PASSWORD: mldis123
+      MYSQL_ROOT_PASSWORD: root123
+    ports:
+      - "3306:3306"
+    volumes:
+      - mldis_mysql_data:/var/lib/mysql
+volumes:
+  mldis_mysql_data:

@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MLDIS | Hospital Management</title><link rel="stylesheet" href="/style.css"></head>
+<body>
+<div id="loginView" class="login-wrap"><div class="login-card"><div class="brand-mark">✚</div><h1>MediLab <span>MLDIS</span></h1><p class="muted">Hospital & Drug Store Information System</p>
+<form id="loginForm"><label>Username</label><input id="username" value="admin" required><label>Password</label><input id="password" type="password" value="admin123" required><button class="primary full">Sign in</button><p id="loginError" class="error"></p></form><small>Demo: admin / admin123</small></div></div>
+<div id="app" class="app hidden"><aside class="sidebar"><div class="brand"><b>✚</b><span>MLDIS<small>Hospital System</small></span></div><nav>
+<button class="nav active" data-page="dashboard">▦ <span>Dashboard</span></button>
+<button class="nav" data-page="patients">♙ <span>Patients</span></button><button class="nav" data-page="tests">⚕ <span>Investigations</span></button>
+<button class="nav" data-page="medicines">▣ <span>Drug Stock</span></button><button class="nav" data-page="billing">▤ <span>Billing</span></button>
+<button class="nav" data-page="departments">▦ <span>Departments</span></button><button class="nav" data-page="staff">♧ <span>Staff Accounts</span></button>
+<button class="nav" data-page="portal">♙ <span>Patient Portal</span></button>
+</nav><div class="side-bottom"><div id="userBadge">Signed in</div><button id="logout" class="logout">↪ Sign out</button></div></aside>
+<main class="main"><header><div><div class="eyebrow">MEDILAB MANAGEMENT</div><h2 id="pageTitle">Dashboard</h2></div><div class="user-pill"><span class="avatar">A</span><span id="who">Administrator</span></div></header>
+<div id="content" class="content"></div><div id="toast" class="toast"></div></main></div>
+<script src="/app.js"></script></body></html>
